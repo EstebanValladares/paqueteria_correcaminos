@@ -17,6 +17,7 @@ public class Main {
         if(opcion == 2){
             int opcionRegex = regex.menuRegex();
             System.out.println("Opción seleccionada: " + (opcionRegex == 1 ? " - Localización" : opcionRegex == 2 ? " - Reporte" : " - Acceso denegado"));
+        //datos de registro para el usuario
         }else{
             RegistrationInput regInput = new RegistrationInput();
             Registration reg = regInput.capturarDatos();
