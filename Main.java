@@ -2,6 +2,7 @@ import modules.User.Usuarios;
 import modules.regex.Regex;
 import data.registration.Registration;
 import data.registration.RegistrationInput;
+import data.send.Envios;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,6 +26,10 @@ public class Main {
             System.out.println("Nombre: " + reg.getNombre());
             System.out.println("Correo Electrónico: " + reg.getGmail());
             System.out.println("Código de Cliente: " + reg.getCodigo());
+            //menu de paquetes
+            Envios envio = new Envios();
+            int opcionPaquete = envio.menuPaquetes();
+            System.out.println("Opción seleccionada: " + (opcionPaquete == 1 ? " - Sobre" : opcionPaquete == 2 ? " - Paquete" : opcionPaquete == 3 ? " - Caja" : " - Contenedor"));
         }
 
     }
