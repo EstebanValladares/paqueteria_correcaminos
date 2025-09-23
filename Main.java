@@ -3,6 +3,8 @@ import modules.regex.Regex;
 import data.registration.Registration;
 import data.registration.RegistrationInput;
 import data.send.Envios;
+import data.send.EnviosCaracteristicas;
+import data.send.PropertiesInput;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,6 +32,8 @@ public class Main {
             Envios envio = new Envios();
             int opcionPaquete = envio.menuPaquetes();
             System.out.println("Opción seleccionada: " + (opcionPaquete == 1 ? " - Sobre" : opcionPaquete == 2 ? " - Paquete" : opcionPaquete == 3 ? " - Caja" : " - Contenedor"));
+            PropertiesInput propInput = new PropertiesInput();
+            EnviosCaracteristicas prop = propInput.capturarEnvio();
         }
 
     }

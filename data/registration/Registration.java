@@ -1,5 +1,5 @@
 package data.registration;
-
+  
 public class Registration {
     protected String nombre;
     protected String gmail;

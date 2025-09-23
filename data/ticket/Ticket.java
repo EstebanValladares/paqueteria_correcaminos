@@ -1,4 +1,4 @@
-package data.ticket;
+    package data.ticket;
 
 public class Ticket {
     protected String codigo_envio;

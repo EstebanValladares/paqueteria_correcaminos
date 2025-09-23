@@ -1,10 +1,12 @@
 package data.registration;
 
+import java.util.Properties;
 import java.util.Scanner;   
 
 public class RegistrationInput {
     public Registration capturarDatos(){
         Scanner sc = new Scanner(System.in);
+        Properties properties = new Properties();
         
         System.out.println("Ingrese su nombre:");
         String nombre = sc.nextLine();
