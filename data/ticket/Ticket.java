@@ -1,5 +1,7 @@
     package data.ticket;
 
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
+
 public class Ticket {
     protected String codigo_envio;
     protected String codigo_cliente;
@@ -23,5 +25,14 @@ public class Ticket {
     }
     public String getHora() {
         return hora;
+    }
+
+    public void mostrarTicket() {
+        System.out.println("----- TICKET DE ENVIO -----");
+        System.out.println("Codigo envio: " + codigo_envio);
+        System.out.println("Codigo cliente: " + codigo_cliente);
+        System.out.println("Fecha envio: " + fecha_envio);
+        System.out.println("Hora envio: " + hora);
+        System.out.println("---------------------------");
     }
 }
