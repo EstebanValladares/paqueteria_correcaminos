@@ -4,8 +4,7 @@ import java.util.Properties;
 import java.util.Scanner;
 
 public class PropertiesInput {
-    public EnviosCaracteristicas  capturarEnvio()
-{
+    public EnviosCaracteristicas  capturarEnvio(){
         Scanner sc = new Scanner(System.in);
         Properties properties = new Properties();
 
@@ -26,3 +25,4 @@ public class PropertiesInput {
 
         return new EnviosCaracteristicas(estadoPaquete, tamPaquete, pesoPaquete, cp_destino, cp_destinatario);
 }}
+ 
